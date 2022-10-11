@@ -56,36 +56,3 @@ img{
     flex-direction: column;
     list-style: none;
 }
-
-/*  Productos  */
-@media(min-width: 768px){
-    .producto1 img{
-        height: 45rem;
-        width: 100%;
-        object-fit: cover;
-    }
-}
-
-@media(min-width: 768px){
-    .producto2 img{
-        height: 20rem;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .explicacion2{
-        height: 20rem;
-    }
-}
-
-@media(min-width: 768px){
-    .producto3 img{
-        height: 16rem;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .explicacion3{
-        height: 16rem;
-    }
-}

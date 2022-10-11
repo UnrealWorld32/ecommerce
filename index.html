@@ -17,16 +17,27 @@
         <h1>Tienda de <span>Muebles</span></h1>
     </header>
 
-    <nav id="navegacion">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Tienda</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Galería</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+    <div class="border-top py-4">
+        <div class="navbar navbar-expand-lg container navbar-light">
+            <a class="navbar-brand nombre-sitio d-lg-none fs-2 fw-bold text-uppercase" href="index.html">
+                Tienda Muebles
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navegacion" class="collapse navbar-collapse">
+                <nav class="navbar-nav container d-flex flex-md-row justify-content-md-between text-center">
+                    <a href="#">Inicio</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Tienda</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Galería</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </div>
 
     <div class="hero-image"></div>
 
@@ -35,7 +46,7 @@
 
         <!--  Contenedor 1  -->
         <div class="row g-0 pt-5">
-            <div class="col-md-8 producto1">
+            <div class="col-md-8">
                 <img class="img-fluid" src="img/producto1.jpg">
             </div>
             <div class="col-md-4 bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
@@ -47,97 +58,95 @@
         </div>
 
         <!--  Contenedor 2  -->
-        <div class="row g-0 pt-3">
-            <div class="col-md-6 pe-1 producto2">
-                <img class="img-fluid" src="img/producto2.jpg">
-            </div>
-            <div class="col-md-6 ps-1 producto2">
-                <img class="img-fluid" src="img/producto3.jpg">
-            </div>
-        </div>
-
-        <div class="row g-0 pt-0 explicacion2">
-            <div class="col-md-6 pe-1">
-                <div class="bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
-                    <h3>Producto 2</h3>
-                    <p>Otra foto muy bonita</p>
-                    <p class="fs-1 fw-bold">$7,000,000.00</p>
-                    <button class="btn btn-success" href="#">Agregar al carrito</button>
+        <div class="row g-0 pt-5">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/producto2.jpg">
+                    <div class="bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
+                        <h3>Producto 2</h3>
+                        <p>Otra foto muy bonita</p>
+                        <p class="fs-1 fw-bold">$7,000,000.00</p>
+                        <button class="btn btn-success" href="#">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 ps-1">
-                <div class="bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
-                    <h3>Producto 3</h3>
-                    <p>Esta está muy fea, no la compres</p>
-                    <p class="fs-1 fw-bold">$0.01</p>
-                    <button class="btn btn-success" href="#">Agregar al carrito</button>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/producto3.jpg">
+                    <div class="bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
+                        <h3>Producto 3</h3>
+                        <p>Esta está muy fea, no la compres</p>
+                        <p class="fs-1 fw-bold">$0.01</p>
+                        <button class="btn btn-success" href="#">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!--  Contenedor 3  -->
-        <div class="row g-0 pt-3">
-            <div class="col-md-4 pe-1 producto3">
-                <img class="img-fluid" src="img/producto4.jpg">
-            </div>
-            <div class="col-md-4 ps-1 pe-1 producto3">
-                <img class="img-fluid" src="img/producto5.jpg">
-            </div>
-            <div class="col-md-4 ps-1 producto3">
-                <img class="img-fluid" src="img/producto6.jpg">
-            </div>
-        </div>
-
-        <div class="row g-0 pt-0">
-            <div class="col-md-4 pe-1">
-                <div class="bg-primary text-center p-5 text-white d-flex flex-column justify-content-center explicacion3">
-                    <h3>Producto 4</h3>
-                    <p>Otra foto muy bonita, pero el que la tomó me cae mal</p>
-                    <p class="fs-1 fw-bold">$0.10</p>
-                    <button class="btn btn-success" href="#">Agregar al carrito</button>
+        <div class="row g-0 pt-5">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/producto4.jpg">
+                    <div class="bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
+                        <h3>Producto 4</h3>
+                        <p>Otra foto muy bonita, pero el que la tomó me cae mal</p>
+                        <p class="fs-1 fw-bold">$0.10</p>
+                        <button class="btn btn-success" href="#">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 ps-1 pe-1">
-                <div class="bg-primary text-center p-5 text-white d-flex flex-column justify-content-center explicacion3">
-                    <h3>Producto 5</h3>
-                    <p><i>Inserte texto aquí</i></p>
-                    <p class="fs-1 fw-bold">N/A</p>
-                    <button class="btn btn-success" href="#">Agregar al carrito</button>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/producto5.jpg">
+                    <div class="bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
+                        <h3>Producto 5</h3>
+                        <p><i>Inserte texto aquí</i></p>
+                        <p class="fs-1 fw-bold">N/A</p>
+                        <button class="btn btn-success" href="#">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 ps-1">
-                <div class="bg-primary text-center p-5 text-white d-flex flex-column justify-content-center explicacion3">
-                    <h3>Producto 6</h3>
-                    <p>Foto muy bonita<br>(foto no incluida)</p>
-                    <p class="fs-1 fw-bold">$7,000,000.00</p>
-                    <button class="btn btn-success" href="#">Agregar al carrito</button>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/producto6.jpg">
+                    <div class="bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
+                        <h3>Producto 6</h3>
+                        <p>Foto muy bonita<br>(foto no incluida)</p>
+                        <p class="fs-1 fw-bold">$7,000,000.00</p>
+                        <button class="btn btn-success" href="#">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
         </div>
 
         <h2>Categorías de Productos</h2>
 
+        <!--  Contenedor 4  -->
         <div class="row g-0 pt-3">
-            <div class="col-md-4 pe-1 producto3">
-                <img class="img-fluid" src="img/categoria1.jpg">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/categoria1.jpg">
+                    <div class="col-md-4 text-center">
+                        <p>Oficina</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 ps-1 pe-1 producto3">
-                <img class="img-fluid" src="img/categoria2.jpg">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/categoria2.jpg">
+                    <div class="col-md-4 text-center">
+                        <p>Hogar</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 ps-1 producto3">
-                <img class="img-fluid" src="img/categoria3.jpg">
-            </div>
-        </div>
-
-        <div class="row g-0 pt-0">
-            <div class="col-md-4 text-center">
-                <p>Oficina</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <p>Hogar</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <p>Cocina</p>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/categoria3.jpg">
+                    <div class="col-md-4 text-center">
+                        <p>Cocina</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -173,6 +182,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
