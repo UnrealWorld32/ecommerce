@@ -1,5 +1,5 @@
 /*  Generales  */
-h1, h2, h3, .precio, p{
+h1, h2, h3, h4, .precio, p{
     text-align: center;
 }
 
@@ -12,8 +12,14 @@ h3{
     margin: 0;
 }
 
+h4{
+    top: 40rem;
+    padding-left: 4rem;
+    color: hsl(202, 60%, 60%);
+}
+
 span{
-    color: #037BC0;
+    color: #037abf;
 }
 
 body{
